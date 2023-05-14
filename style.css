@@ -1,5 +1,5 @@
 /* https://coolors.co/db2b39-29335c-f3a712-5aff15-aaffe5 */
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -7,7 +7,8 @@
     outline: none;
     font-family: 'Bitter', serif;
 }
-body{
+
+body {
     padding: 10px;
     display: flex;
     flex-direction: column;
@@ -15,49 +16,93 @@ body{
     align-items: center;
     background-color: #f7f7f7;
 }
-.form{
+
+.form {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     width: 100%;
     max-width: 500px;
 }
-.form > *{
+
+.form>* {
     margin: 6px 0;
 }
-.form input{
-    width: 100%;
-    padding: 8px 4px;
-    font-size: 16px;
-    border: 2px solid #21212142;
-    background-color: #f7f7f7;
-}
-.form .btns{
+
+.form .btns {
     display: flex;
     flex-direction: row;
     gap: 10px;
 }
-.form button{
+
+.form button {
     padding: 8px 24px;
     font-size: 16px;
     background-color: #F3A712;
     border: 2px solid #21212142;
     cursor: pointer;
 }
-.form button:nth-of-type(1){
+
+.form button:nth-of-type(1) {
     background-color: #5AFF15;
 }
-.form button:hover{
+
+.form button:hover {
     opacity: 0.7;
 }
-.table{
+
+.table {
     max-width: 100%;
     overflow-x: auto;
 }
-td{
+
+td {
     border: 2px solid #21212142;
     min-width: 100px;
     max-width: 100px;
     padding: 8px 4px;
     font-size: 18px;
+}
+
+.swal-overlay {
+    background-color: rgba(0, 0, 0, 0.628);
+}
+
+.swal-button {
+    background-color: green;
+}
+
+.swal-button {
+    background-color: rgb(0, 0, 0);
+}
+
+.swal-button {
+    padding: 8px 24px;
+    font-size: 16px;
+    background-color: #5AFF15;
+    border: 2px solid #21212142;
+    color: black;
+    cursor: pointer;
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    -o-border-radius: 0;
+}
+
+.swal-button:not([disabled]):hover {
+    background-color: #5AFF15;
+    opacity: 0.7;
+}
+
+.alert input {
+    width: 100%;
+    padding: 8px 4px;
+    font-size: 16px;
+    border: 2px solid #21212142;
+    background-color: #f7f7f7;
+}
+
+.alert input:not(:last-child) {
+    margin-bottom: 10px;
 }
